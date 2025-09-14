@@ -1,0 +1,49 @@
+/* ===== RESET ===== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', Tahoma, sans-serif; background: #f9fafb; color: #333; line-height: 1.6; }
+a { text-decoration: none; color: inherit; }
+
+/* ===== NAVBAR ===== */
+header { background: #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.05); }
+.nav-container { max-width: 1200px; margin: auto; display: flex; align-items: center; justify-content: space-between; padding: 1rem 2rem; }
+.logo { font-size: 1.5rem; font-weight: bold; color: #1e40af; }
+nav ul { display: flex; list-style: none; gap: 1.5rem; }
+nav ul li a { color: #333; font-weight: 500; }
+nav ul li a:hover { color: #2563eb; }
+
+/* ===== HERO ===== */
+.hero { max-width: 900px; margin: auto; text-align: center; padding: 4rem 2rem; }
+.hero h1 { font-size: 2.5rem; color: #1e40af; margin-bottom: 1rem; }
+.hero p { color: #555; margin-bottom: 2rem; font-size: 1.1rem; }
+
+/* ===== SEARCH BAR ===== */
+.search-bar { display: flex; max-width: 500px; margin: auto; border: 1px solid #ddd; border-radius: 50px; overflow: hidden; }
+.search-bar input { flex: 1; padding: 0.75rem; border: none; font-size: 1rem; }
+.search-bar button { background: #2563eb; color: #fff; border: none; padding: 0.75rem 1.5rem; cursor: pointer; }
+.search-bar button:hover { background: #1e3a8a; }
+
+/* ===== SECTION TITLES ===== */
+.section-title { text-align: center; margin: 3rem 0 1rem; font-size: 1.8rem; color: #1e40af; }
+
+/* ===== CARDS ===== */
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; padding: 0 2rem; }
+.card { background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05); transition: transform 0.2s; }
+.card:hover { transform: translateY(-5px); }
+.card img { width: 100%; height: 300px; object-fit: cover; }
+.card-content { padding: 1rem; }
+.card-content h3 { color: #1e40af; margin-bottom: 0.5rem; }
+.card-content p { color: #555; font-size: 0.9rem; }
+
+/* ===== VIEW ALL ===== */
+.view-all { text-align: center; margin: 2rem; }
+.view-all a { color: #2563eb; font-weight: 500; }
+
+/* ===== ADS ===== */
+.ad-banner, .ad-footer { margin: 1rem auto; max-width: 1000px; }
+.content-with-ads { display: flex; gap: 1.5rem; padding: 0 2rem; }
+.main-content { flex: 3; }
+.sidebar-ad { flex: 1; display: none; }
+@media (min-width: 900px) { .sidebar-ad { display: block; } }
+
+/* ===== FOOTER ===== */
+footer { text-align: center; padding: 2rem 1rem; background: #fff; color: #555; margin-top: 3rem; }
